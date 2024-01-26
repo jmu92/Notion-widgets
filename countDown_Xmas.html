@@ -106,7 +106,7 @@ body{
 </body>
 <script>
     const year = new Date().getFullYear();
-const myDate = new Date('Jun 26, 2023 00:00:00');
+const myDate = new Date('Dec 25, 2024 00:00:00');
 console.log(myDate);
 
 // countdown
@@ -116,7 +116,7 @@ let timer = setInterval(function() {
   const today = new Date().getTime();
 
   // get the difference
-  const diff = Math.abs(myDate - today);
+  const diff = today - myDate;
 
   // math
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
